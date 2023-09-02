@@ -36,7 +36,6 @@ RUN wget -nv -O "weewx-${WEEWX_VERSION}.tar.gz" "https://github.com/weewx/weewx/
     wget -nv -O "weewx-xaggs.zip" "https://github.com/tkeffer/weewx-xaggs/archive/master.zip" &&\
     wget -nv -O "weewx-xcumulative.tar.gz" "https://github.com/gjr80/weewx-xcumulative/releases/download/v0.1.0/xcum-0.1.0.tar.gz" &&\
     wget -P "/var/tmp" "https://github.com/gjr80/weewx-gw1000/releases/download/v0.6.0b2/gw1000-0.6.0b2.tar.gz" &&\
-    
     tar xvfz "weewx-${WEEWX_VERSION}.tar.gz"
 
 RUN mkdir /tmp/weewx-wdc/ &&\
