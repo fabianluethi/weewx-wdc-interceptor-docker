@@ -43,7 +43,7 @@ RUN mkdir /tmp/weewx-wdc/ &&\
 WORKDIR /tmp/weewx-${WEEWX_VERSION}
 
 RUN pip install --no-cache-dir -r ./requirements.txt &&\
-    python ./setup.py build && python ./setup.py install < /tmp/install-input.txt
+    python ./setup.py build && python ./setup.py install --no-prompt
 
 WORKDIR ${WEEWX_HOME}
 
