@@ -56,7 +56,8 @@ RUN bin/wee_extension --install /tmp/weewx-interceptor.zip &&\
     bin/wee_extension --install /tmp/weewx-wdc/ &&\
     bin/wee_extension --install /var/tmp/gw1000-0.6.0b2.tar.gz &&\
     bin/wee_extension --list &&\
-    bin/wee_config --reconfigure --driver=user.interceptor --no-prompt
+    #bin/wee_config --reconfigure --driver=user.interceptor --no-prompt
+    bin/wee_config --reconfigure --driver=user.gw1000 --no-prompt
 
 COPY src/skin.conf ./skins/weewx-wdc/
 
