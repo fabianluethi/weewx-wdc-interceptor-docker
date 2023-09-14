@@ -8,7 +8,7 @@ rm -f /run/rsyslogd.pid
 service rsyslog start
 
 # Reconfigure for right driver
-"${WEEWX_HOME}"/bin/wee_config --reconfigure --driver=user.gw1000
+"${WEEWX_HOME}"/bin/wee_config --reconfigure --driver=user.gw1000 --no-prompt
 
 # start weewx
 echo 'Starting weewx'
